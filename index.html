@@ -1,147 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Quiz task</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top  ">
-      <div class="container-fluid">
-  
-        <a class="navbar-brand justify-content-left hover " href="#"> QUIZ TASK </a>
-        <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "></span>
-        </button>
-  
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/home.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#retry">Retry<span class="sr-only">(current)</span></a>
-            </li>
-            
-            
-           </div>
-        </div>
-      
-    </nav>
-    <div class="container border px-5 py-5 " >
-    <h1 class="text-center text-info border-info bg-light mb-4 mt-5 border" id="retry"><b>QUIZ</b> </h1><br><br>
-    <div >
-      <h1 class="text-info"><b>Question 1</b> </h1><br>
-      <h3>The percentage of water in the human body is</h3>
-      <ul>
-        <li>A. 65</li>
-        <li>B. 80</li>
-        <li>C. 40</li>
-        <li>D. 70</li>
-      </ul>
-      <div>
-        <input
-          type="text"
-          placeholder="enter answer here" id="quest-1">
-        <button type="submit" onclick="checkbutton()" id="sub">click here</button>
-        <p class="mt-2" id="result1" ></p>
-        
-      </div>
-    </div><br>
-    <div>
-      <h1 class="text-info "> Question 2</h1><br>
-      <h3>Food like pizza, burger and noodles are rich in</h3>
-      <ul>
-        <li>A. carbohydrates</li>
-        <li>B. minerals</li>
-        <li>C. protein</li>
-        <li>D. vitamins</li>
-      </ul>
-      <div>
-        <input
-          type="text"
-          placeholder="enter answer here" id="quest-2">
-        <button type="submit" onclick="checkbutton2()" id="sub2">click here</button>
-        <p class="mt-2" id="result2"></p>
-      </div>
-    </div><br>
-    <div>
-      <h1 class="text-info"> Question 3</h1><br>
-      <h3>....... provide more than the double energy provided by carbohydrates or proteins in human body</h3>
-      <ul>
-        <li>A. vitamins</li>
-        <li>B. minerals</li>
-        <li>C. starch</li>
-        <li>D. fats</li>
-      </ul>
-      <div>
-        <input
-          type="text"
-          placeholder="enter answer here" id="quest-3">
-        <button type="submit" onclick="checkbutton3()" id="sub3">click here</button>
-        <p class="mt-2" id="result3"></p>
-      </div>
-    </div><br>
-    <div>
-      <h1 class="text-info"> Question 4</h1><br>
-      <h3>....... is essential for forming haemoglobin in the blood</h3>
-      <ul>
-        <li>A. iron</li>
-        <li>B. magnesium</li>
-        <li>C. phosphorus</li>
-        <li>D. calcium</li>
-      </ul>
-      <div>
-        <input
-          type="text"
-          placeholder="enter answer here" id="quest-4">
-        <button type="submit" onclick="checkbutton4()" id="sub4">click here</button>
-        <p class="mt-2" id="result4"></p>
-      </div>
-    </div><br>
-    <div>
-      <h1 class="text-info"> Question 5</h1><br>
-      <h3>The component of food which helps the body fight against infection is</h3>
-      <ul>
-        <li>A. starch</li>
-        <li>B. fats</li>
-        <li>C. protein</li>
-        <li>D. carbohydrates</li>
-      </ul>
-      <div>
-        <input
-          type="text"
-          placeholder="enter answer here" id="quest-5">
-        <button type="submit" onclick="checkbutton5()" id="sub5">click here</button>
-        <p class="mt-2" id="result5"></p>
-      </div>
-    </div><br>
-    <div>
-      <h1 class="text-info"> Question 6</h1><br>
-      <h3>The mineral which controls the functioning of thyroid is</h3>
-      <ul>
-        <li>A. phosphorus</li>
-        <li>B. iodine</li>
-        <li>C. magnesium</li>
-        <li>D. calcium</li>
-      </ul>
-      <div>
-        <input
-          type="text"
-          placeholder="enter answer here" id="quest-6">
-        <button type="submit" onclick="checkbutton6()" id="sub6">click here</button>
-        <p class="mt-2" id="result6"></p>
-      </div>
-    </div><br>
-    <button class="mt-5 bg-info text-light" onclick="calculate()">check result</button>
-    <span class="text-primary" id="finalscore"></span> 
-  </div>
+    <header class="text-center d-flex flex-column justify-content-center container-fluid" >
+     
+      <h2 class="text-primary " id="welcome"></h2><br><br>
+        <h1 class="text-white "> <b>FOOD QUIZ</b> </h1><br><br>
 
-    <script src="js/index.js"></script>
+        <div class="">
+        <a class="btn px-5 btn-primary    rounded-pill" href="/index.html" role="button">
+          START</a>
+        </div>
+      </div>
+        </div>
+    </header>
+      
+
+
+
+
+
+
+    
+
+    <script>
+      let name = prompt("Hello!  what is your name?");
+document.getElementById('welcome').innerHTML = "Welcome" + " " + name + " " + "to my" ;
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -152,6 +44,5 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
  
-  </body>
-
+</body>
 </html>
