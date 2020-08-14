@@ -11,10 +11,12 @@ ul{
     border: 3px solid azure;
     
 }
+
+
 ul li{
     padding:  9px ;
 }
-ul :hover{
+#qbx ul :hover{
     cursor: not-allowed;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: rotateY(-0.1rem);

@@ -23,9 +23,9 @@ function checkbutton() {
        color.style.backgroundColor = "green";
         answer.innerText = " correct! ";
         a = 1;
-
-     }else if(question==0){
-        answer.innerText = "Please select an option";
+     }else if(typeof(question) !== 'string' || question==0){
+       console.log( typeof(question))
+        answer.innerText = "Please select a valid option";
      }
      
      else {
@@ -45,7 +45,10 @@ function checkbutton2() {
        color2.style.backgroundColor = "green";
         answer2.innerText = " Correct!!! ";
         b=1;
-     } 
+     } else if(question==0){
+        answer2.innerText = "Please select an option";
+     }
+     
      else {
          color2.style.backgroundColor = "red";
          answer2.innerText = "Answer - a";
@@ -63,7 +66,11 @@ function checkbutton3() {
         answer3.innerText = "you're Smart!! Correct";
         c=1;
         
-     } else {
+     } else if(question==0){
+        answer3.innerText = "Please select an option";
+     }
+     
+     else {
          color3.style.backgroundColor = "red";
          answer3.innerText = "Answer - d";
          c=0
@@ -80,7 +87,11 @@ function checkbutton4() {
         answer4.innerText = "Correct!";
         d=1;
         
-     } else {
+     } else if(question==0){
+        answer4.innerText = "Please select an option";
+     }
+     
+     else {
          color4.style.backgroundColor = "red";
          answer4.innerText = " Answer - a";
          d=0;
@@ -98,7 +109,11 @@ function checkbutton5() {
        color5.style.backgroundColor = "green";
         answer5.innerText = "Correct!!!";
         e=1;
-     } else {
+     } else if(question==0){
+        answer5.innerText = "Please select an option";
+     }
+     
+     else {
          color5.style.backgroundColor = "red";
          answer5.innerText = "Answer - c";
          e=0;
@@ -118,7 +133,11 @@ function checkbutton6() {
         answer6.innerText = "you're Smart!! Correct";
         f=1;
         
-     } else {
+     } else if(question==0){
+        answer6.innerText = "Please select an option";
+     }
+     
+     else {
          color6.style.backgroundColor = "red";
          answer6.innerText = "Answer - b";
          f=0;
